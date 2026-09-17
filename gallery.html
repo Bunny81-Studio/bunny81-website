@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Bunny81</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f6f2;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 26px 28px 40px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .brand {
+      color: #171717;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    main {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 80px 70px;
+      align-items: start;
+    }
+
+    .gallery-item {
+      display: block;
+      color: #171717;
+      text-decoration: none;
+    }
+
+    .image-space {
+      height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .image-space img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .gallery-item:hover .title,
+    .gallery-item:focus .title {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-top: 80px;
+    }
+
+    nav a {
+      color: #171717;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 20px 18px 30px;
+      }
+
+      header {
+        margin-bottom: 40px;
+      }
+
+      .brand {
+        font-size: 20px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      .image-space {
+        height: 55vh;
+        max-height: 500px;
+      }
+
+      nav {
+        margin-top: 60px;
+        gap: 16px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <a class="brand" href="index.html">Bunny81</a>
+    </header>
+
+    <main>
+
+      <div class="gallery">
+
+        <a class="gallery-item" href="atlanta-hotel-rooster.html">
+          <div class="image-space">
+            <img
+              src="AtlantaHotelRooster-04.jpeg"
+              alt="Atlanta Hotel Rooster linocut print"
+            >
+          </div>
+          <p class="title">Atlanta Hotel Rooster</p>
+        </a>
+
+        <a class="gallery-item" href="traveler-rabbit.html">
+          <div class="image-space">
+            <img
+              src="Traveler Rabbit on packing paper.jpg"
+              alt="Traveler Rabbit hand-printed on salvaged packing paper"
+            >
+          </div>
+          <p class="title">Traveler Rabbit</p>
+        </a>
+
+        <a class="gallery-item" href="flower.html">
+          <div class="image-space">
+            <img
+              src="Flower on Cardstock.jpg"
+              alt="Hand-carved flower print"
+            >
+          </div>
+          <p class="title">Flower</p>
+        </a>
+
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Surface Patterns</a>
+        <a href="#">Gift Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+    </main>
+
+  </div>
+</body>
+</html>
