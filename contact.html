@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Bunny81</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f6f2;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 26px 28px 22px;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .brand {
+      color: #171717;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: .03em;
+    }
+
+    main {
+      flex: 1;
+      width: min(100%, 700px);
+      margin: 0 auto;
+      padding: 55px 0 65px;
+    }
+
+    h1 {
+      margin: 0 0 42px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .contact p {
+      margin: 0 0 22px;
+    }
+
+    .contact a {
+      color: #171717;
+      text-underline-offset: 4px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(18px, 4vw, 54px);
+      flex-wrap: wrap;
+      padding-top: 8px;
+    }
+
+    nav a {
+      color: #171717;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 20px 18px 18px;
+      }
+
+      .brand {
+        font-size: 20px;
+      }
+
+      main {
+        padding: 38px 0 50px;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+
+      .contact {
+        font-size: 15px;
+      }
+
+      nav {
+        gap: 14px 22px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <a class="brand" href="index.html">Bunny81</a>
+    </header>
+
+    <main>
+      <h1>Contact</h1>
+
+      <div class="contact">
+        <p>
+          Questions about artwork, licensing, collaborations,
+          or something else?
+        </p>
+
+        <p>
+          <a href="mailto:hello@bunny81.com">Send me an email.</a>
+        </p>
+      </div>
+    </main>
+
+    <nav aria-label="Main navigation">
+      <a href="gallery.html">Gallery</a>
+      <a href="#">Surface Patterns</a>
+      <a href="#">Gift Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</body>
+</html>
