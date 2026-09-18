@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Bunny81</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f6f2;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 26px 28px 22px;
+    }
+
+    header {
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    .brand {
+      color: #171717;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: .03em;
+    }
+
+    main {
+      width: min(100%, 1050px);
+      margin: 0 auto;
+      padding: 55px 0 65px;
+      flex: 1;
+    }
+
+    h1 {
+      margin: 0 0 42px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: minmax(280px, 460px) minmax(300px, 1fr);
+      gap: clamp(40px, 7vw, 85px);
+      align-items: start;
+    }
+
+    .photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .text p {
+      margin: 0 0 22px;
+    }
+
+    .text p:first-child {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    nav {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(18px, 4vw, 54px);
+      flex-wrap: wrap;
+      padding-top: 8px;
+    }
+
+    nav a {
+      color: #171717;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 20px 18px 18px;
+      }
+
+      .brand {
+        font-size: 20px;
+      }
+
+      main {
+        padding: 38px 0 50px;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .photo {
+        width: min(100%, 500px);
+        margin: 0 auto;
+      }
+
+      .text {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      nav {
+        gap: 14px 22px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <a class="brand" href="index.html">Bunny81</a>
+    </header>
+
+    <main>
+      <h1>About</h1>
+
+      <div class="about">
+
+        <div class="photo">
+          <img
+            src="TeresaArtistPhoto.jpeg"
+            alt="Teresa working on a sculpture"
+          >
+        </div>
+
+        <div class="text">
+
+          <p>Hi, I’m Teresa. I make things.</p>
+
+          <p>
+            Drawing is usually somewhere at the root of what I do, but I’ve
+            never understood why an artist should have to choose one medium.
+            An idea tends to arrive with its own way of being made: a linocut,
+            a sculpture, a pattern, a story, something sewn, printed, carved,
+            built—or occasionally something I haven’t figured out how to make yet.
+          </p>
+
+          <p>
+            For me, creativity lives somewhere between imagination and problem
+            solving. There’s a mostly wordless part of my brain that can take an
+            idea and begin translating it into lines, materials, dimensions and
+            processes. Different kinds of work feed one another, so I’m happiest
+            when I’m free to follow an idea wherever it goes.
+          </p>
+
+          <p>
+            Bunny81 came later, when I found my way back to making things after
+            a long time away. Rabbits had become important to me as a teenager,
+            during a time when art, music and the early internet made my world
+            much larger than the one immediately around me. When I decided I
+            wanted that creative part of myself back, bringing a rabbit with me
+            seemed inevitable.
+          </p>
+
+          <p>
+            The 81 is just the year I was born. No secret code.
+          </p>
+
+          <p>
+            And perhaps my favorite part of making something is what happens
+            when I share it: that little change in someone’s face when they see
+            something that connects with them. Sometimes that’s the whole reward.
+            Sometimes they want to take it home.
+          </p>
+
+        </div>
+      </div>
+    </main>
+
+    <nav aria-label="Main navigation">
+      <a href="gallery.html">Gallery</a>
+      <a href="#">Surface Patterns</a>
+      <a href="#">Gift Shop</a>
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+  </div>
+</body>
+</html>
