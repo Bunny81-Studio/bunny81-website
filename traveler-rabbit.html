@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Traveler Rabbit, an original linocut hand printed on salvaged kraft packing paper by Bunny81.">
   <title>Traveler Rabbit — Bunny81</title>
 
   <style>
@@ -18,6 +20,8 @@
     .page {
       min-height: 100vh;
       padding: 26px 28px 40px;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -29,50 +33,104 @@
       color: #171717;
       text-decoration: none;
       font-size: 22px;
-      letter-spacing: 0.03em;
+      font-weight: 500;
+      letter-spacing: .03em;
     }
 
     main {
-      max-width: 1050px;
+      width: 100%;
+      max-width: 1150px;
       margin: 0 auto;
+    }
+
+    .artwork-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 65px;
+      align-items: center;
     }
 
     .artwork {
       display: block;
-      max-width: 100%;
-      max-height: 70vh;
-      width: auto;
+      width: 100%;
       height: auto;
-      margin: 0 auto 34px;
+      max-height: 75vh;
+      object-fit: contain;
     }
 
     .details {
-      max-width: 620px;
-      margin: 0 auto;
+      max-width: 460px;
     }
 
     h1 {
-      margin: 0 0 10px;
-      font-size: 22px;
-      font-weight: 500;
+      margin: 0 0 14px;
+      font-size: 24px;
+      font-weight: 400;
     }
 
     p {
       margin: 5px 0;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.8;
+    }
+
+    .artwork-story {
+      margin-top: 35px;
+    }
+
+    .artwork-story h2 {
+      margin: 0 0 20px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .artwork-story p {
+      margin-bottom: 18px;
     }
 
     .back {
       display: inline-block;
-      margin-top: 28px;
+      margin-top: 30px;
       color: #171717;
       font-size: 13px;
       text-decoration: none;
     }
 
-    .back:hover {
+    .back:hover,
+    .back:focus {
       text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 20px 18px 30px;
+      }
+
+      header {
+        margin-bottom: 35px;
+      }
+
+      .brand {
+        font-size: 20px;
+      }
+
+      .artwork-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .artwork {
+        max-height: 60vh;
+      }
+
+      .details {
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
@@ -85,18 +143,40 @@
     </header>
 
     <main>
-      <img
-        class="artwork"
-        src="Traveler Rabbit on packing paper.jpg"
-        alt="Traveler Rabbit hand-printed on salvaged packing paper"
-      >
+      <div class="artwork-layout">
 
-      <div class="details">
-        <h1>Traveler Rabbit</h1>
-        <p>Linocut</p>
-        <p>Hand printed on salvaged kraft packing paper</p>
+        <img
+          class="artwork"
+          src="Traveler Rabbit on packing paper.jpg"
+          alt="Traveler Rabbit linocut printed on textured, salvaged kraft packing paper"
+        >
 
-        <a class="back" href="index.html">← Back</a>
+        <div class="details">
+          <h1>Traveler Rabbit</h1>
+
+          <p>Linocut</p>
+          <p>Hand printed on salvaged kraft packing paper</p>
+
+          <section class="artwork-story">
+            <h2>About the print</h2>
+
+            <p>
+              This little traveler is printed on salvaged
+              kraft packing paper, with its creases and
+              crumpled texture left intact.
+            </p>
+
+            <p>
+              Rather than disappearing beneath the ink,
+              the paper becomes part of the artwork.
+            </p>
+          </section>
+
+          <a class="back" href="gallery.html">
+            ← Back to Gallery
+          </a>
+        </div>
+
       </div>
     </main>
 
